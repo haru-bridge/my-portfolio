@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,63 +6,50 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
-    <header class="header">
-        <nav class="nav">
-            <div class="logo">BRIDGE</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#solutions">Solutions</a></li>
-                <li><a href="#contact" class="btn btn-outline">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-        </nav>
-    </header>
-
-    <!-- ヒーローセクション -->
-    <section id="home" class="hero">
-        <canvas id="heroCanvas"></canvas>
-        <div class="hero-content">
-            <h1 class="hero-title">The Bridge Builder</h1>
-            <h2 class="hero-subtitle">Sublimating human error into systemic efficiency.</h2>
-            <div class="hero-buttons">
-                <a href="#solutions" class="btn btn-primary">View Solutions</a>
-                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-            </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head><!-- ヒーローセクション -->
+<section id="home" class="hero">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-content">
+        <h1 class="hero-title">The Bridge Builder</h1>
+        <h2 class="hero-subtitle">現場の「面倒」と「データ」を、システムで利益に変える。</h2>
+        <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">解決策を見る</a>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- ソリューションセクション -->
-    <section id="solutions" class="solutions">
+<!-- アバウトセクション -->
+<section id="about" class="about">
+    <div class="container">
         <div class="section-header">
-            <h2 class="section-title">Our <span class="highlight">Solutions</span></h2>
+            <h2 class="section-title">About <span class="highlight">Me</span></h2>
+        </div>
+        <div class="about-content">
+            <p>20代、元Webエンジニア。現在はAmazon広告データの解析や、業務フローのシステム化（脱エクセル）を専門としています。技術そのものではなく、それによって生まれる『時間』と『利益』を提供します。</p>
+        </div>
+    </div>
+</section>
+
+<!-- プロジェクトセクション -->
+<section id="projects" class="projects">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
             <p class="section-subtitle">Engineering for measurable business impact</p>
         </div>
-        <div class="solutions-grid">
-            <!-- ソリューション1: Amazon Ads Optimizer -->
-            <div class="solution-card">
-                <div class="solution-content">
-                    <div class="solution-header">
-                        <div class="solution-icon">
+        <div class="projects-grid">
+            <!-- プロジェクト1 -->
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-header">
+                        <div class="project-icon">
                             <i class="fab fa-amazon"></i>
                         </div>
                         <h3>Amazon Ads Optimizer</h3>
                     </div>
-                    <div class="solution-pain">
-                        <h4>解決する課題</h4>
-                        <p>Bulk Fileの解析が煩雑、レポート作成の手間</p>
-                    </div>
-                    <div class="solution-value">
-                        <h4>提供価値</h4>
-                        <p>Pythonによるデータパイプライン構築。中間テーブル生成の自動化とKPIモニタリング。</p>
-                    </div>
-                    <div class="solution-tags">
+                    <p>Bulk Fileの解析パイプライン。中間テーブル生成の自動化とKPIモニタリングで、広告運用の工数を80%削減。</p>
+                    <div class="project-tags">
                         <span>Python</span>
                         <span>Pandas</span>
                         <span>Amazon API</span>
@@ -72,86 +57,65 @@
                 </div>
             </div>
 
-            <!-- ソリューション2: Excel to Web App Migration -->
-            <div class="solution-card">
-                <div class="solution-content">
-                    <div class="solution-header">
-                        <div class="solution-icon">
+            <!-- プロジェクト2 -->
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-header">
+                        <div class="project-icon">
                             <i class="fas fa-file-excel"></i>
                         </div>
                         <h3>Excel to Web App</h3>
                     </div>
-                    <div class="solution-pain">
-                        <h4>解決する課題</h4>
-                        <p>属人化したExcelマクロ、バージョン管理の破綻</p>
-                    </div>
-                    <div class="solution-value">
-                        <h4>提供価値</h4>
-                        <p>Streamlitを用いたセキュアなWebアプリ化。業務フローの標準化と可視化。</p>
-                    </div>
-                    <div class="solution-tags">
+                    <p>属人化したExcel業務をStreamlitでWebアプリ化。データの整合性を保ちつつ、チーム共有を瞬時に。</p>
+                    <div class="project-tags">
                         <span>Streamlit</span>
-                        <span>Python</span>
-                        <span>Cloud Deploy</span>
+                        <span>DX</span>
+                        <span>BusinessEfficiency</span>
                     </div>
                 </div>
             </div>
 
-            <!-- ソリューション3: Interactive Simulation UI -->
-            <div class="solution-card">
-                <div class="solution-content">
-                    <div class="solution-header">
-                        <div class="solution-icon">
-                            <i class="fas fa-calculator"></i>
+            <!-- プロジェクト3 -->
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-wallet"></i>
                         </div>
-                        <h3>Interactive Simulation</h3>
+                        <h3>Interactive UX / NFT</h3>
                     </div>
-                    <div class="solution-pain">
-                        <h4>解決する課題</h4>
-                        <p>問い合わせの質の低さ、離脱率の高さ</p>
-                    </div>
-                    <div class="solution-value">
-                        <h4>提供価値</h4>
-                        <p>Reactによる動的な見積もり/診断フォーム。ユーザー体験の向上とリード品質の改善。</p>
-                    </div>
-                    <div class="solution-tags">
+                    <p>Googleフォームとウォレットを連携させた、コンバージョン率の高い動的LP制作。</p>
+                    <div class="project-tags">
                         <span>React</span>
-                        <span>TypeScript</span>
-                        <span>Tailwind CSS</span>
+                        <span>Web3</span>
+                        <span>UI/UX</span>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- コンタクトセクション -->
-    <section id="contact" class="contact">
+<!-- コンタクトセクション -->
+<section id="contact" class="contact">
+    <div class="container">
         <div class="section-header">
             <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
-            <p class="section-subtitle">Let's build something impactful together</p>
+            <p class="section-subtitle">あなたの現場の『面倒』を教えてください。3日以内にプロトタイプを提案します。</p>
         </div>
         <div class="contact-content">
             <form class="contact-form">
                 <div class="form-group">
-                    <input type="text" placeholder="Your Name" required>
+                    <input type="text" placeholder="お名前" required>
                 </div>
                 <div class="form-group">
-                    <input type="email" placeholder="Your Email" required>
+                    <input type="email" placeholder="メールアドレス" required>
                 </div>
                 <div class="form-group">
-                    <textarea placeholder="How can I help you?" rows="4" required></textarea>
+                    <textarea placeholder="どんなお困りごとがありますか？" rows="4" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
+                <button type="submit" class="btn btn-primary">メッセージを送信</button>
             </form>
         </div>
-    </section>
-
-    <footer class="footer">
-        <div class="footer-content">
-            <p>© 2025 The Bridge Builder. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+    </div>
+</section>
