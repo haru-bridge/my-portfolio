@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | The Bridge Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">BRIDGE</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#contact" class="btn btn-outline">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ヒーローセクション -->
+    <section id="home" class="hero">
+        <canvas id="heroCanvas"></canvas>
+        <div class="hero-content">
+            <h1 class="hero-title">The Bridge Builder</h1>
+            <h2 class="hero-subtitle">Sublimating human error into systemic efficiency.</h2>
+            <div class="hero-buttons">
+                <a href="#solutions" class="btn btn-primary">View Solutions</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ソリューションセクション -->
+    <section id="solutions" class="solutions">
+        <div class="section-header">
+            <h2 class="section-title">Our <span class="highlight">Solutions</span></h2>
+            <p class="section-subtitle">Engineering for measurable business impact</p>
+        </div>
+        <div class="solutions-grid">
+            <!-- ソリューション1: Amazon Ads Optimizer -->
+            <div class="solution-card">
+                <div class="solution-content">
+                    <div class="solution-header">
+                        <div class="solution-icon">
+                            <i class="fab fa-amazon"></i>
+                        </div>
+                        <h3>Amazon Ads Optimizer</h3>
+                    </div>
+                    <div class="solution-pain">
+                        <h4>解決する課題</h4>
+                        <p>Bulk Fileの解析が煩雑、レポート作成の手間</p>
+                    </div>
+                    <div class="solution-value">
+                        <h4>提供価値</h4>
+                        <p>Pythonによるデータパイプライン構築。中間テーブル生成の自動化とKPIモニタリング。</p>
+                    </div>
+                    <div class="solution-tags">
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>Amazon API</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ソリューション2: Excel to Web App Migration -->
+            <div class="solution-card">
+                <div class="solution-content">
+                    <div class="solution-header">
+                        <div class="solution-icon">
+                            <i class="fas fa-file-excel"></i>
+                        </div>
+                        <h3>Excel to Web App</h3>
+                    </div>
+                    <div class="solution-pain">
+                        <h4>解決する課題</h4>
+                        <p>属人化したExcelマクロ、バージョン管理の破綻</p>
+                    </div>
+                    <div class="solution-value">
+                        <h4>提供価値</h4>
+                        <p>Streamlitを用いたセキュアなWebアプリ化。業務フローの標準化と可視化。</p>
+                    </div>
+                    <div class="solution-tags">
+                        <span>Streamlit</span>
+                        <span>Python</span>
+                        <span>Cloud Deploy</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ソリューション3: Interactive Simulation UI -->
+            <div class="solution-card">
+                <div class="solution-content">
+                    <div class="solution-header">
+                        <div class="solution-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <h3>Interactive Simulation</h3>
+                    </div>
+                    <div class="solution-pain">
+                        <h4>解決する課題</h4>
+                        <p>問い合わせの質の低さ、離脱率の高さ</p>
+                    </div>
+                    <div class="solution-value">
+                        <h4>提供価値</h4>
+                        <p>Reactによる動的な見積もり/診断フォーム。ユーザー体験の向上とリード品質の改善。</p>
+                    </div>
+                    <div class="solution-tags">
+                        <span>React</span>
+                        <span>TypeScript</span>
+                        <span>Tailwind CSS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- コンタクトセクション -->
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+            <p class="section-subtitle">Let's build something impactful together</p>
+        </div>
+        <div class="contact-content">
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="How can I help you?" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2025 The Bridge Builder. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
